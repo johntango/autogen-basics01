@@ -1,6 +1,11 @@
 ### AutoGen Basics
 
-
+pip install --upgrade \
+  pyautogen \
+  "autogen-ext[mcp]" \
+  openai \
+  anyio
+  
 **Steps**
 1. Create a new project folder.
 2. Create a new virtual environment.
