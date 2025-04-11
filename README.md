@@ -1,12 +1,14 @@
 ### AutoGen Basics
 
-pip install --upgrade \
-  pyautogen \
-  "autogen-ext[mcp]" \
-  openai \
-  anyio
-  
+pip install autogen-core
+pip install autogen-ext
+pip install autogen-ext-mcp
+pip install autogen-agentchat
+pip install "autogen-ext[openai]"
+pip install -U "autogen-ext[mcp]"
+
 **Steps**
+
 1. Create a new project folder.
 2. Create a new virtual environment.
 3. Activate the venv `source venv/bin/activate`

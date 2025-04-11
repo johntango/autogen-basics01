@@ -1,7 +1,21 @@
 import asyncio
-from autogen import GroupChat, GroupChatManager, UserProxyAgent, AssistantAgent
-from autogen_ext.tools.mcp import mcp_ws_client_tools, WebSocketClientParams
+from autogen_agentchat.agents import AssistantAgent
+from autogen_ext.models.openai import OpenAIChatCompletionClient
+from autogen_agentchat.agents import UserProxyAgent
+from autogen_agentchat.messages import StructuredMessage, TextMessage
+from autogen_agentchat.conditions import ExternalTermination, TextMentionTermination
+from autogen_agentchat.teams import RoundRobinGroupChat
+from autogen_agentchat.teams import Swarm
 
+from autogen_ext.tools.mcp import mcp_ws_client_tools
+
+
+from autogen_agentchat import GroupChat, GroupChatManager
+
+
+
+print(autogen.__version__)
+print(autogen.__file__)
 # ───────────────────────────────────────────────────────────────
 # 🔌 Connect to MCP WebSocket Server
 # ───────────────────────────────────────────────────────────────
